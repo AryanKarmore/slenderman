@@ -1,0 +1,1041 @@
+{
+  "model": "pritamdeka/S-PubMedBert-MS-MARCO",
+  "groq_model": "qwen/qwen3.8-27b",
+  "n_drugs": 172,
+  "embedding_dim": 768,
+  "normalization": "L2",
+  "drug_order": [
+    {
+      "drug_id": 1003,
+      "drug_name": "Camptothecin",
+      "moa_pathway": "DNA replication",
+      "primary_target": "TOP1"
+    },
+    {
+      "drug_id": 1004,
+      "drug_name": "Vinblastine",
+      "moa_pathway": "Mitosis",
+      "primary_target": "Microtubule destabiliser"
+    },
+    {
+      "drug_id": 1006,
+      "drug_name": "Cytarabine",
+      "moa_pathway": "Other",
+      "primary_target": "Antimetabolite"
+    },
+    {
+      "drug_id": 1007,
+      "drug_name": "Docetaxel",
+      "moa_pathway": "Mitosis",
+      "primary_target": "Microtubule stabiliser"
+    },
+    {
+      "drug_id": 1008,
+      "drug_name": "Methotrexate",
+      "moa_pathway": "DNA replication",
+      "primary_target": "Antimetabolite"
+    },
+    {
+      "drug_id": 1009,
+      "drug_name": "Tretinoin",
+      "moa_pathway": "Other",
+      "primary_target": "Retinoic acid"
+    },
+    {
+      "drug_id": 1010,
+      "drug_name": "Gefitinib",
+      "moa_pathway": "EGFR signaling",
+      "primary_target": "EGFR"
+    },
+    {
+      "drug_id": 1011,
+      "drug_name": "Navitoclax",
+      "moa_pathway": "Apoptosis regulation",
+      "primary_target": "BCL2, BCL-XL, BCL-W"
+    },
+    {
+      "drug_id": 1012,
+      "drug_name": "Vorinostat",
+      "moa_pathway": "Chromatin histone acetylation",
+      "primary_target": "HDAC inhibitor Class I, IIa, IIb, IV"
+    },
+    {
+      "drug_id": 1013,
+      "drug_name": "Nilotinib",
+      "moa_pathway": "ABL signaling",
+      "primary_target": "ABL"
+    },
+    {
+      "drug_id": 1014,
+      "drug_name": "Refametinib",
+      "moa_pathway": "ERK MAPK signaling",
+      "primary_target": "MEK1, MEK2"
+    },
+    {
+      "drug_id": 1016,
+      "drug_name": "Temsirolimus",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "MTOR"
+    },
+    {
+      "drug_id": 1017,
+      "drug_name": "Olaparib",
+      "moa_pathway": "Genome integrity",
+      "primary_target": "PARP1, PARP2"
+    },
+    {
+      "drug_id": 1018,
+      "drug_name": "Veliparib",
+      "moa_pathway": "Genome integrity",
+      "primary_target": "PARP1, PARP2"
+    },
+    {
+      "drug_id": 1019,
+      "drug_name": "Bosutinib",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "SRC, ABL, TEC"
+    },
+    {
+      "drug_id": 1020,
+      "drug_name": "Lenalidomide",
+      "moa_pathway": "Protein stability and degradation",
+      "primary_target": "CRBN"
+    },
+    {
+      "drug_id": 1021,
+      "drug_name": "Axitinib",
+      "moa_pathway": "RTK signaling",
+      "primary_target": "PDGFR, KIT, VEGFR"
+    },
+    {
+      "drug_id": 1022,
+      "drug_name": "AZD7762",
+      "moa_pathway": "Cell cycle",
+      "primary_target": "CHEK1, CHEK2"
+    },
+    {
+      "drug_id": 1023,
+      "drug_name": "GW441756",
+      "moa_pathway": "RTK signaling",
+      "primary_target": "NTRK1"
+    },
+    {
+      "drug_id": 1024,
+      "drug_name": "Lestaurtinib",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "FLT3, JAK2, NTRK1, NTRK2, NTRK3"
+    },
+    {
+      "drug_id": 1025,
+      "drug_name": "SB216763",
+      "moa_pathway": "WNT signaling",
+      "primary_target": "GSK3A, GSK3B"
+    },
+    {
+      "drug_id": 1026,
+      "drug_name": "Tanespimycin",
+      "moa_pathway": "Protein stability and degradation",
+      "primary_target": "HSP90"
+    },
+    {
+      "drug_id": 1029,
+      "drug_name": "Motesanib",
+      "moa_pathway": "RTK signaling",
+      "primary_target": "VEGFR, RET, KIT, PDGFR"
+    },
+    {
+      "drug_id": 1030,
+      "drug_name": "KU-55933",
+      "moa_pathway": "Genome integrity",
+      "primary_target": "ATM"
+    },
+    {
+      "drug_id": 1031,
+      "drug_name": "Elesclomol",
+      "moa_pathway": "Protein stability and degradation",
+      "primary_target": "HSP90"
+    },
+    {
+      "drug_id": 1032,
+      "drug_name": "Afatinib",
+      "moa_pathway": "EGFR signaling",
+      "primary_target": "EGFR, ERBB2"
+    },
+    {
+      "drug_id": 1033,
+      "drug_name": "Vismodegib",
+      "moa_pathway": "Other",
+      "primary_target": "SMO"
+    },
+    {
+      "drug_id": 1034,
+      "drug_name": "Staurosporine",
+      "moa_pathway": "RTK signaling",
+      "primary_target": "Broad spectrum kinase inhibitor"
+    },
+    {
+      "drug_id": 1036,
+      "drug_name": "PLX-4720",
+      "moa_pathway": "ERK MAPK signaling",
+      "primary_target": "BRAF"
+    },
+    {
+      "drug_id": 1037,
+      "drug_name": "BX795",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "TBK1, PDK1 (PDPK1), IKK, AURKB, AURKC"
+    },
+    {
+      "drug_id": 1042,
+      "drug_name": "Doramapimod",
+      "moa_pathway": "JNK and p38 signaling",
+      "primary_target": "p38, JNK2"
+    },
+    {
+      "drug_id": 1048,
+      "drug_name": "Mirin",
+      "moa_pathway": "Genome integrity",
+      "primary_target": "MRE11"
+    },
+    {
+      "drug_id": 1049,
+      "drug_name": "PD173074",
+      "moa_pathway": "RTK signaling",
+      "primary_target": "FGFR1, FGFR2, FGFR3"
+    },
+    {
+      "drug_id": 1051,
+      "drug_name": "Alisertib",
+      "moa_pathway": "Mitosis",
+      "primary_target": "AURKA"
+    },
+    {
+      "drug_id": 1053,
+      "drug_name": "MK-2206",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "AKT1, AKT2"
+    },
+    {
+      "drug_id": 1054,
+      "drug_name": "Palbociclib",
+      "moa_pathway": "Cell cycle",
+      "primary_target": "CDK4, CDK6"
+    },
+    {
+      "drug_id": 1057,
+      "drug_name": "Dactolisib",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "PI3K (class 1), MTORC1, MTORC2"
+    },
+    {
+      "drug_id": 1058,
+      "drug_name": "Pictilisib",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "PI3K (class 1)"
+    },
+    {
+      "drug_id": 1059,
+      "drug_name": "AZD8055",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "MTORC1, MTORC2"
+    },
+    {
+      "drug_id": 1061,
+      "drug_name": "SB590885",
+      "moa_pathway": "ERK MAPK signaling",
+      "primary_target": "BRAF"
+    },
+    {
+      "drug_id": 1062,
+      "drug_name": "Selumetinib",
+      "moa_pathway": "ERK MAPK signaling",
+      "primary_target": "MEK1, MEK2"
+    },
+    {
+      "drug_id": 1068,
+      "drug_name": "Obatoclax Mesylate",
+      "moa_pathway": "Apoptosis regulation",
+      "primary_target": "BCL2, BCL-XL, BCL-W, MCL1"
+    },
+    {
+      "drug_id": 1072,
+      "drug_name": "Avagacestat",
+      "moa_pathway": "Other",
+      "primary_target": "Amyloid beta20, Amyloid beta40"
+    },
+    {
+      "drug_id": 1073,
+      "drug_name": "5-Fluorouracil",
+      "moa_pathway": "Other",
+      "primary_target": "Antimetabolite (DNA & RNA)"
+    },
+    {
+      "drug_id": 1079,
+      "drug_name": "Dasatinib",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "ABL, SRC, Ephrins, PDGFR, KIT"
+    },
+    {
+      "drug_id": 1080,
+      "drug_name": "Paclitaxel",
+      "moa_pathway": "Mitosis",
+      "primary_target": "Microtubule stabiliser"
+    },
+    {
+      "drug_id": 1083,
+      "drug_name": "Crizotinib",
+      "moa_pathway": "RTK signaling",
+      "primary_target": "MET, ALK, ROS1"
+    },
+    {
+      "drug_id": 1084,
+      "drug_name": "Rapamycin",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "MTORC1"
+    },
+    {
+      "drug_id": 1085,
+      "drug_name": "Sorafenib",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "PDGFR, KIT, VEGFR, RAF"
+    },
+    {
+      "drug_id": 1086,
+      "drug_name": "BI-2536",
+      "moa_pathway": "Cell cycle",
+      "primary_target": "PLK1, PLK2, PLK3"
+    },
+    {
+      "drug_id": 1088,
+      "drug_name": "Irinotecan",
+      "moa_pathway": "DNA replication",
+      "primary_target": "TOP1"
+    },
+    {
+      "drug_id": 1096,
+      "drug_name": "Tozasertib",
+      "moa_pathway": "Mitosis",
+      "primary_target": "AURKA, AURKB, AURKC, others"
+    },
+    {
+      "drug_id": 1131,
+      "drug_name": "PRIMA-1MET",
+      "moa_pathway": "p53 pathway",
+      "primary_target": "TP53 activation"
+    },
+    {
+      "drug_id": 1133,
+      "drug_name": "Serdemetan",
+      "moa_pathway": "p53 pathway",
+      "primary_target": "MDM2"
+    },
+    {
+      "drug_id": 1168,
+      "drug_name": "Erlotinib",
+      "moa_pathway": "EGFR signaling",
+      "primary_target": "EGFR"
+    },
+    {
+      "drug_id": 1175,
+      "drug_name": "Rucaparib",
+      "moa_pathway": "Genome integrity",
+      "primary_target": "PARP1, PARP2"
+    },
+    {
+      "drug_id": 1177,
+      "drug_name": "Niraparib",
+      "moa_pathway": "Genome integrity",
+      "primary_target": "PARP1, PARP2"
+    },
+    {
+      "drug_id": 1179,
+      "drug_name": "MK-1775",
+      "moa_pathway": "Cell cycle",
+      "primary_target": "WEE1, PLK1"
+    },
+    {
+      "drug_id": 1180,
+      "drug_name": "Dinaciclib",
+      "moa_pathway": "Cell cycle",
+      "primary_target": "CDK1, CDK2, CDK5, CDK9"
+    },
+    {
+      "drug_id": 1190,
+      "drug_name": "Gemcitabine",
+      "moa_pathway": "DNA replication",
+      "primary_target": "Pyrimidine antimetabolite"
+    },
+    {
+      "drug_id": 1191,
+      "drug_name": "Bortezomib",
+      "moa_pathway": "Protein stability and degradation",
+      "primary_target": "Proteasome"
+    },
+    {
+      "drug_id": 1192,
+      "drug_name": "GSK269962A",
+      "moa_pathway": "Cytoskeleton",
+      "primary_target": "ROCK1, ROCK2"
+    },
+    {
+      "drug_id": 1199,
+      "drug_name": "Tamoxifen",
+      "moa_pathway": "Hormone-related",
+      "primary_target": "ESR1"
+    },
+    {
+      "drug_id": 1200,
+      "drug_name": "Fulvestrant",
+      "moa_pathway": "Hormone-related",
+      "primary_target": "ESR"
+    },
+    {
+      "drug_id": 1237,
+      "drug_name": "EPZ004777",
+      "moa_pathway": "Chromatin histone methylation",
+      "primary_target": "DOT1L"
+    },
+    {
+      "drug_id": 1248,
+      "drug_name": "Daporinad",
+      "moa_pathway": "Metabolism",
+      "primary_target": "NAMPT"
+    },
+    {
+      "drug_id": 1249,
+      "drug_name": "BMS-345541",
+      "moa_pathway": "Other",
+      "primary_target": "IKK-1, IKK-2"
+    },
+    {
+      "drug_id": 1250,
+      "drug_name": "AZ960",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "JAK2, JAK3"
+    },
+    {
+      "drug_id": 1259,
+      "drug_name": "Talazoparib",
+      "moa_pathway": "Genome integrity",
+      "primary_target": "PARP1, PARP2"
+    },
+    {
+      "drug_id": 1268,
+      "drug_name": "XAV939",
+      "moa_pathway": "WNT signaling",
+      "primary_target": "TNKS1, TNKS2"
+    },
+    {
+      "drug_id": 1372,
+      "drug_name": "Trametinib",
+      "moa_pathway": "ERK MAPK signaling",
+      "primary_target": "MEK1, MEK2"
+    },
+    {
+      "drug_id": 1373,
+      "drug_name": "Dabrafenib",
+      "moa_pathway": "ERK MAPK signaling",
+      "primary_target": "BRAF"
+    },
+    {
+      "drug_id": 1375,
+      "drug_name": "Temozolomide",
+      "moa_pathway": "DNA replication",
+      "primary_target": "DNA alkylating agent"
+    },
+    {
+      "drug_id": 1401,
+      "drug_name": "AZD5438",
+      "moa_pathway": "Cell cycle",
+      "primary_target": "CDK2"
+    },
+    {
+      "drug_id": 1441,
+      "drug_name": "AZD2014",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "mTORC1, mTORC2"
+    },
+    {
+      "drug_id": 1449,
+      "drug_name": "AZD1208",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "PIM1, PIM2, PIM3"
+    },
+    {
+      "drug_id": 1463,
+      "drug_name": "AZD1332",
+      "moa_pathway": "RTK signaling",
+      "primary_target": "NTRK1, NTRK2, NTRK3"
+    },
+    {
+      "drug_id": 1494,
+      "drug_name": "SN-38",
+      "moa_pathway": "DNA replication",
+      "primary_target": "TOP1"
+    },
+    {
+      "drug_id": 1502,
+      "drug_name": "Bicalutamide",
+      "moa_pathway": "Hormone-related",
+      "primary_target": "AR"
+    },
+    {
+      "drug_id": 1507,
+      "drug_name": "Ruxolitinib",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "JAK1, JAK2"
+    },
+    {
+      "drug_id": 1510,
+      "drug_name": "Linsitinib",
+      "moa_pathway": "IGF1R signaling",
+      "primary_target": "IGF1R"
+    },
+    {
+      "drug_id": 1511,
+      "drug_name": "Epirubicin",
+      "moa_pathway": "DNA replication",
+      "primary_target": "Anthracycline"
+    },
+    {
+      "drug_id": 1512,
+      "drug_name": "Cyclophosphamide",
+      "moa_pathway": "DNA replication",
+      "primary_target": "Alkylating agent"
+    },
+    {
+      "drug_id": 1529,
+      "drug_name": "Pevonedistat",
+      "moa_pathway": "Other",
+      "primary_target": "NAE"
+    },
+    {
+      "drug_id": 1549,
+      "drug_name": "Sapitinib",
+      "moa_pathway": "EGFR signaling",
+      "primary_target": "EGFR, ERBB2, ERBB3"
+    },
+    {
+      "drug_id": 1553,
+      "drug_name": "Uprosertib",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "AKT1, AKT2, AKT3"
+    },
+    {
+      "drug_id": 1557,
+      "drug_name": "LCL161",
+      "moa_pathway": "Apoptosis regulation",
+      "primary_target": "XIAP, IAP1, IAP2"
+    },
+    {
+      "drug_id": 1558,
+      "drug_name": "Lapatinib",
+      "moa_pathway": "EGFR signaling",
+      "primary_target": "EGFR, ERBB2"
+    },
+    {
+      "drug_id": 1559,
+      "drug_name": "Luminespib",
+      "moa_pathway": "Protein stability and degradation",
+      "primary_target": "HSP90"
+    },
+    {
+      "drug_id": 1560,
+      "drug_name": "Alpelisib",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "PI3Kalpha"
+    },
+    {
+      "drug_id": 1561,
+      "drug_name": "Taselisib",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "PI3K (beta sparing)"
+    },
+    {
+      "drug_id": 1564,
+      "drug_name": "SCH772984",
+      "moa_pathway": "ERK MAPK signaling",
+      "primary_target": "ERK1, ERK2"
+    },
+    {
+      "drug_id": 1578,
+      "drug_name": "Leflunomide",
+      "moa_pathway": "DNA replication",
+      "primary_target": "Pyrimidine synthesis inhibitor"
+    },
+    {
+      "drug_id": 1580,
+      "drug_name": "GSK2801",
+      "moa_pathway": "Chromatin other",
+      "primary_target": "BAZ2A, BAZ2B"
+    },
+    {
+      "drug_id": 1581,
+      "drug_name": "Bromosporine",
+      "moa_pathway": "Chromatin other",
+      "primary_target": "CECR2, BRD2, BRD4, BRD9"
+    },
+    {
+      "drug_id": 1582,
+      "drug_name": "SGC-CBP30",
+      "moa_pathway": "Chromatin histone acetylation",
+      "primary_target": "EP300, CBP"
+    },
+    {
+      "drug_id": 1583,
+      "drug_name": "GSK-LSD1",
+      "moa_pathway": "Chromatin histone methylation",
+      "primary_target": "KDM1"
+    },
+    {
+      "drug_id": 1593,
+      "drug_name": "Entinostat",
+      "moa_pathway": "Chromatin histone acetylation",
+      "primary_target": "HDAC1, HDAC3"
+    },
+    {
+      "drug_id": 1594,
+      "drug_name": "OSI-027",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "MTORC1, MTORC2"
+    },
+    {
+      "drug_id": 1598,
+      "drug_name": "LGK974",
+      "moa_pathway": "WNT signaling",
+      "primary_target": "PORCN"
+    },
+    {
+      "drug_id": 1613,
+      "drug_name": "VE-822",
+      "moa_pathway": "Genome integrity",
+      "primary_target": "ATR"
+    },
+    {
+      "drug_id": 1614,
+      "drug_name": "WZ4003",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "NUAK1, NUAK2"
+    },
+    {
+      "drug_id": 1618,
+      "drug_name": "GSK2606414",
+      "moa_pathway": "Metabolism",
+      "primary_target": "PERK"
+    },
+    {
+      "drug_id": 1625,
+      "drug_name": "RVX-208",
+      "moa_pathway": "Chromatin other",
+      "primary_target": "BRD4"
+    },
+    {
+      "drug_id": 1626,
+      "drug_name": "OTX015",
+      "moa_pathway": "Chromatin other",
+      "primary_target": "BRD2, BRD3, BRD4"
+    },
+    {
+      "drug_id": 1627,
+      "drug_name": "GSK343",
+      "moa_pathway": "Chromatin histone methylation",
+      "primary_target": "EZH2"
+    },
+    {
+      "drug_id": 1629,
+      "drug_name": "ML323",
+      "moa_pathway": "Protein stability and degradation",
+      "primary_target": "USP1, UAF1"
+    },
+    {
+      "drug_id": 1630,
+      "drug_name": "Entospletinib",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "SYK"
+    },
+    {
+      "drug_id": 1631,
+      "drug_name": "PRT062607",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "SYK"
+    },
+    {
+      "drug_id": 1632,
+      "drug_name": "Ribociclib",
+      "moa_pathway": "Cell cycle",
+      "primary_target": "CDK4, CDK6"
+    },
+    {
+      "drug_id": 1634,
+      "drug_name": "AGI-6780",
+      "moa_pathway": "Metabolism",
+      "primary_target": "IDH2 R140Q mutant"
+    },
+    {
+      "drug_id": 1706,
+      "drug_name": "AZD5153",
+      "moa_pathway": "Chromatin other",
+      "primary_target": "BRD4"
+    },
+    {
+      "drug_id": 1720,
+      "drug_name": "AZD5991",
+      "moa_pathway": "Apoptosis regulation",
+      "primary_target": "MCL1"
+    },
+    {
+      "drug_id": 1776,
+      "drug_name": "GSK2256098C",
+      "moa_pathway": "Cytoskeleton",
+      "primary_target": "FAK1"
+    },
+    {
+      "drug_id": 1778,
+      "drug_name": "GSK2110183B",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "AKT1, AKT2, AKT3"
+    },
+    {
+      "drug_id": 1786,
+      "drug_name": "AZD4547",
+      "moa_pathway": "RTK signaling",
+      "primary_target": "FGFR1, FGFR2, FGFR3"
+    },
+    {
+      "drug_id": 1799,
+      "drug_name": "Ibrutinib",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "BTK"
+    },
+    {
+      "drug_id": 1802,
+      "drug_name": "Zoledronate",
+      "moa_pathway": "Other",
+      "primary_target": " "
+    },
+    {
+      "drug_id": 1808,
+      "drug_name": "Topotecan",
+      "moa_pathway": "DNA replication",
+      "primary_target": "TOP1"
+    },
+    {
+      "drug_id": 1809,
+      "drug_name": "Teniposide",
+      "moa_pathway": "DNA replication",
+      "primary_target": "TOP2A, TOP2B"
+    },
+    {
+      "drug_id": 1810,
+      "drug_name": "Mitoxantrone",
+      "moa_pathway": "DNA replication",
+      "primary_target": "TOP2"
+    },
+    {
+      "drug_id": 1811,
+      "drug_name": "Dactinomycin",
+      "moa_pathway": "Other",
+      "primary_target": "RNA polymerase"
+    },
+    {
+      "drug_id": 1813,
+      "drug_name": "Fludarabine",
+      "moa_pathway": "DNA replication",
+      "primary_target": "Antimetabolite"
+    },
+    {
+      "drug_id": 1814,
+      "drug_name": "Nelarabine",
+      "moa_pathway": "DNA replication",
+      "primary_target": "DNA polymerases, Ribonucleotide reductase"
+    },
+    {
+      "drug_id": 1815,
+      "drug_name": "Dacarbazine",
+      "moa_pathway": "Other",
+      "primary_target": "CP11A"
+    },
+    {
+      "drug_id": 1817,
+      "drug_name": "Romidepsin",
+      "moa_pathway": "Chromatin histone acetylation",
+      "primary_target": "HDAC1, HDAC2, HDAC3, HDAC8"
+    },
+    {
+      "drug_id": 1827,
+      "drug_name": "Dihydrorotenone",
+      "moa_pathway": "Unclassified",
+      "primary_target": "Mitochondrial Complex I"
+    },
+    {
+      "drug_id": 1835,
+      "drug_name": "Elephantin",
+      "moa_pathway": "Unclassified",
+      "primary_target": "NF-kappaB pathway, Oxidative stress"
+    },
+    {
+      "drug_id": 1843,
+      "drug_name": "LMP744",
+      "moa_pathway": "DNA replication",
+      "primary_target": "TOP1"
+    },
+    {
+      "drug_id": 1845,
+      "drug_name": "Schweinfurthin A",
+      "moa_pathway": "Unclassified",
+      "primary_target": "OSBP, Cholesterol trafficking"
+    },
+    {
+      "drug_id": 1853,
+      "drug_name": "OF-1",
+      "moa_pathway": "Chromatin histone acetylation",
+      "primary_target": "BRPF1B, BRPF2"
+    },
+    {
+      "drug_id": 1862,
+      "drug_name": "MG-132",
+      "moa_pathway": "Protein stability and degradation",
+      "primary_target": "Proteasome, CAPN1"
+    },
+    {
+      "drug_id": 1873,
+      "drug_name": "Buparlisib",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "PI3Kalpha, PI3Kdelta, PI3Kbeta, PI3Kgamma"
+    },
+    {
+      "drug_id": 1908,
+      "drug_name": "Ulixertinib",
+      "moa_pathway": "ERK MAPK signaling",
+      "primary_target": "ERK1, ERK2"
+    },
+    {
+      "drug_id": 1909,
+      "drug_name": "Venetoclax",
+      "moa_pathway": "Apoptosis regulation",
+      "primary_target": "BCL2"
+    },
+    {
+      "drug_id": 1910,
+      "drug_name": "ABT737",
+      "moa_pathway": "Apoptosis regulation",
+      "primary_target": "BCL2, BCL-XL,  BCL-W, BCL-B, BFL1"
+    },
+    {
+      "drug_id": 1912,
+      "drug_name": "Afuresertib",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "AKT1, AKT2, AKT3"
+    },
+    {
+      "drug_id": 1913,
+      "drug_name": "AGI-5198",
+      "moa_pathway": "Metabolism",
+      "primary_target": "IDH1 (R132H)"
+    },
+    {
+      "drug_id": 1915,
+      "drug_name": "AZD3759",
+      "moa_pathway": "EGFR signaling",
+      "primary_target": "EGFR"
+    },
+    {
+      "drug_id": 1916,
+      "drug_name": "AZD5363",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "AKT1, AKT2, AKT3, ROCK2"
+    },
+    {
+      "drug_id": 1917,
+      "drug_name": "AZD6738",
+      "moa_pathway": "Genome integrity",
+      "primary_target": "ATR"
+    },
+    {
+      "drug_id": 1918,
+      "drug_name": "AZD8186",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "PI3Kalpha, PI3Kbeta"
+    },
+    {
+      "drug_id": 1919,
+      "drug_name": "Osimertinib",
+      "moa_pathway": "EGFR signaling",
+      "primary_target": "EGFR"
+    },
+    {
+      "drug_id": 1922,
+      "drug_name": "Cediranib",
+      "moa_pathway": "RTK signaling",
+      "primary_target": "VEGFR, FLT1, FLT2, FLT3, FLT4, KIT, PDGFRB"
+    },
+    {
+      "drug_id": 1924,
+      "drug_name": "Ipatasertib",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "AKT1, AKT, AKT3"
+    },
+    {
+      "drug_id": 1927,
+      "drug_name": "GSK2578215A",
+      "moa_pathway": "Other, kinases",
+      "primary_target": "LRRK2"
+    },
+    {
+      "drug_id": 1928,
+      "drug_name": "I-BRD9",
+      "moa_pathway": "Chromatin other",
+      "primary_target": "BRD9"
+    },
+    {
+      "drug_id": 1936,
+      "drug_name": "Savolitinib",
+      "moa_pathway": "RTK signaling",
+      "primary_target": "MET"
+    },
+    {
+      "drug_id": 1941,
+      "drug_name": "Sepantronium bromide",
+      "moa_pathway": "Apoptosis regulation",
+      "primary_target": "BIRC5"
+    },
+    {
+      "drug_id": 1997,
+      "drug_name": "WEHI-539",
+      "moa_pathway": "Apoptosis regulation",
+      "primary_target": "BCL-XL"
+    },
+    {
+      "drug_id": 2038,
+      "drug_name": "UNC0638",
+      "moa_pathway": "Chromatin histone methylation",
+      "primary_target": "G9A, GLP"
+    },
+    {
+      "drug_id": 2040,
+      "drug_name": "Foretinib",
+      "moa_pathway": "RTK signaling",
+      "primary_target": "MET, KDR, TIE2, VEGFR3/FLT4, RON, PDGFR, FGFR1, EGFR"
+    },
+    {
+      "drug_id": 2044,
+      "drug_name": "Pyridostatin",
+      "moa_pathway": "DNA replication",
+      "primary_target": "G-quadruplex stabiliser"
+    },
+    {
+      "drug_id": 2045,
+      "drug_name": "AMG-319",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "PI3K (beta sparing)"
+    },
+    {
+      "drug_id": 2046,
+      "drug_name": "MK-8776",
+      "moa_pathway": "Cell cycle",
+      "primary_target": "CHEK1, CHEK2, CDK2"
+    },
+    {
+      "drug_id": 2048,
+      "drug_name": "Vinorelbine",
+      "moa_pathway": "Mitosis",
+      "primary_target": "Microtubule destabiliser"
+    },
+    {
+      "drug_id": 2055,
+      "drug_name": "Mycophenolic acid",
+      "moa_pathway": "Unclassified",
+      "primary_target": "IMPDH1, IMPDH2"
+    },
+    {
+      "drug_id": 2109,
+      "drug_name": "AZ6102",
+      "moa_pathway": "WNT signaling",
+      "primary_target": "TNKS1, TNKS2"
+    },
+    {
+      "drug_id": 2110,
+      "drug_name": "GSK591",
+      "moa_pathway": "Chromatin histone methylation",
+      "primary_target": "PMRT5"
+    },
+    {
+      "drug_id": 2157,
+      "drug_name": "A-366",
+      "moa_pathway": "Chromatin histone methylation",
+      "primary_target": "EHMT1, EHMT2"
+    },
+    {
+      "drug_id": 2158,
+      "drug_name": "CPI-637",
+      "moa_pathway": "Chromatin histone methylation",
+      "primary_target": "EP300"
+    },
+    {
+      "drug_id": 2169,
+      "drug_name": "AZD6482",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "PI3Kbeta"
+    },
+    {
+      "drug_id": 2170,
+      "drug_name": "AT13148",
+      "moa_pathway": "PI3K/MTOR signaling",
+      "primary_target": "AKT1"
+    },
+    {
+      "drug_id": 2171,
+      "drug_name": "BMS-754807",
+      "moa_pathway": "IGF1R signaling",
+      "primary_target": "IGF1R, IR"
+    },
+    {
+      "drug_id": 2172,
+      "drug_name": "JQ1",
+      "moa_pathway": "Chromatin other",
+      "primary_target": "BRD2, BRD3, BRD4, BRDT"
+    },
+    {
+      "drug_id": 2173,
+      "drug_name": "PFI-1",
+      "moa_pathway": "Chromatin other",
+      "primary_target": "BRD4"
+    },
+    {
+      "drug_id": 2174,
+      "drug_name": "IOX2",
+      "moa_pathway": "Other",
+      "primary_target": "EGLN1"
+    },
+    {
+      "drug_id": 2175,
+      "drug_name": "CHIR-99021",
+      "moa_pathway": "WNT signaling",
+      "primary_target": "GSK3A, GSK3B"
+    },
+    {
+      "drug_id": 2177,
+      "drug_name": "SGC0946",
+      "moa_pathway": "Chromatin histone methylation",
+      "primary_target": "DOT1L"
+    },
+    {
+      "drug_id": 2359,
+      "drug_name": "GSK2830371",
+      "moa_pathway": "Other",
+      "primary_target": "WIP1"
+    },
+    {
+      "drug_id": 2439,
+      "drug_name": "glutathione",
+      "moa_pathway": "Other",
+      "primary_target": "anti-oxidant proteins"
+    },
+    {
+      "drug_id": 2498,
+      "drug_name": "alpha-lipoic acid",
+      "moa_pathway": "Metabolism",
+      "primary_target": "Metabolism"
+    }
+  ]
+}
